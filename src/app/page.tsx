@@ -1,6 +1,8 @@
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
+import { Button } from "@/components/ui/button";
+import AddItems from "@/components/AddItems";
 
 export async function getItems() {
   const items = fs
@@ -20,28 +22,17 @@ export default async function Home() {
   return (
     <main className="min-h-screen p-8">
       {/* Header section */}
-      <div className="max-w-4xl mx-auto mb-12">
+      <div className="max-w-4xl mx-auto mb-12 flex flex-col gap-4">
         <h1 className="text-4xl font-bold mb-4">Item Matcher</h1>
         <div className="flex gap-4">
-          <Link
-            href="/match"
-            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-          >
-            Match Items
-          </Link>
-          <Link
-            href="/add"
-            className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
-          >
-            Add New Item
-          </Link>
-          <Link
-            href="/clear"
-            className="px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
-          >
-            Clear Items
-          </Link>
+          <Button asChild className="bg-green-500 hover:bg-green-600">
+            <Link href="/match">Match Items</Link>
+          </Button>
+          <Button asChild variant="destructive">
+            <Link href="/clear">Clear Items</Link>
+          </Button>
         </div>
+        <AddItems />
       </div>
 
       {/* Items list section */}
@@ -51,7 +42,7 @@ export default async function Home() {
           {items.map((item) => (
             <div
               key={item}
-              className="p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow"
+              className="p-4 rounded-lg shadow hover:shadow-md transition-shadow dark:border dark:border-gray-800 dark:hover:shadow-md"
             >
               {item}
             </div>
