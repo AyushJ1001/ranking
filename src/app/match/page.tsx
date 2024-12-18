@@ -1,4 +1,4 @@
-import { getItems } from "../page";
+import { getItems } from "../items";
 import Matchup from "./Matchup";
 
 export default async function Match() {
