@@ -1,16 +1,7 @@
 import Link from "next/link";
-import fs from "fs";
-import path from "path";
 import { Button } from "@/components/ui/button";
 import AddItems from "@/components/AddItems";
-
-export async function getItems() {
-  const items = fs
-    .readFileSync(path.join(process.cwd(), "src", "items.txt"), "utf8")
-    .split("\n")
-    .filter((item) => item.trim() !== "");
-  return items;
-}
+import { getItems } from "./items";
 
 // This forces Next.js to re-fetch the data on each request
 export const dynamic = "force-dynamic";
