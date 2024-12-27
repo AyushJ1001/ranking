@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { getItems } from "../items";
 import Matchup from "./Matchup";
 
