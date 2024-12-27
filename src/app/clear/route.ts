@@ -1,9 +1,10 @@
-import fs from "fs";
 import { redirect } from "next/navigation";
-import path from "path";
+import { Redis } from "@upstash/redis";
+
+const redis = Redis.fromEnv();
 
 export async function GET() {
-  fs.writeFileSync(path.join(process.cwd(), "src", "items.txt"), "");
+  await redis.del("items");
   // redirect to home
   redirect("/");
 }

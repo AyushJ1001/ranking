@@ -1,10 +1,13 @@
-import fs from "fs";
-import path from "path";
+import { Redis } from "@upstash/redis";
+
+const redis = Redis.fromEnv();
 
 export async function getItems() {
-  const items = fs
-    .readFileSync(path.join(process.cwd(), "src", "items.txt"), "utf8")
-    .split("\n")
-    .filter((item) => item.trim() !== "");
-  return items;
+  try {
+    const items = (await redis.get("items")) || [];
+    return items;
+  } catch (error) {
+    console.error("Error fetching items:", error);
+    throw new Error("Failed to fetch items");
+  }
 }
