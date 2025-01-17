@@ -2,22 +2,14 @@
 
 A simple little tool to help with the process of creating a bracket for a tournament.
 
-## How to use
+Website: [https://ranking.ayushjuvekar.com](https://ranking.ayushjuvekar.com)
 
-1. Clone the repo
-2. Run `npm install` to install the dependencies
-3. Run `npm run dev` to start the development server
-4. Open the app in your browser at `http://localhost:3000`
-5. Use the text area to input the items you want to bracket. One per line.
-6. Click the "Match Items" button to create the bracket.
-7. Click on the winner of the matchup.
-8. Repeat until you have a winner.
+# About
 
-## How it works
+This is a simple tool to help with the process of creating a bracket for a tournament. It is built with Next.js and Tailwind CSS.
 
-The app uses a simple single-elimination bracket. The bracket is created by matching up the items in each round. The app keeps track of which items have been matched up so that no item is matched up against itself or any of its descendants.
+The idea is that you can input the items you want to bracket, and the tool will create a bracket for you. You can then click on the winner of each matchup, and the tool will keep track of the results.
 
-The app also keeps track of the time you take to make your choice. The simple logic is that longer you take to pick, the closer the two choices must be. This means that closer matchups are scored lower than decisive matchups.
+The tool also keeps track of the time you take to make your choice. The simple logic is that longer you take to pick, the closer the two choices must be. This means that closer matchups are scored lower than decisive matchups.
 
 The final score is scaled up so that the top score is 100.
-
