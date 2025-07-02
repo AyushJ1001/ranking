@@ -7,18 +7,11 @@ import { getItems } from "./items";
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
-// Add at the top of the file
-interface Item {
-  id: string;
-  value: string;
-}
-
-// Update the items type in the component
 export default async function Home() {
   let items: string[] = [];
   try {
     items = await getItems();
-  } catch (error) {
+  } catch {
     // Simple error display, could be replaced with an error component
     return (
       <div className="min-h-screen p-8 flex items-center justify-center">
