@@ -8,6 +8,68 @@ export interface RankingData {
   score: number;
 }
 
+// Helper function to apply export styles to an element and store original styles
+const applyExportStylesWithStorage = (element: Element, originalStyles: Map<Element, any>) => {
+  const htmlEl = element as HTMLElement;
+  originalStyles.set(element, {
+    color: htmlEl.style.color,
+    backgroundColor: htmlEl.style.backgroundColor,
+    borderColor: htmlEl.style.borderColor
+  });
+  
+  // Apply black text and proper borders for visibility
+  htmlEl.style.color = '#000000';
+  if (element.tagName === 'TABLE') {
+    htmlEl.style.backgroundColor = '#ffffff';
+    htmlEl.style.border = '1px solid #e2e8f0';
+  }
+  if (element.tagName === 'TH') {
+    htmlEl.style.backgroundColor = '#f8fafc';
+    htmlEl.style.color = '#000000';
+    htmlEl.style.borderBottom = '1px solid #e2e8f0';
+  }
+  if (element.tagName === 'TD') {
+    htmlEl.style.backgroundColor = '#ffffff';
+    htmlEl.style.borderBottom = '1px solid #f1f5f9';
+  }
+  if (element.tagName === 'TR') {
+    htmlEl.style.borderBottom = '1px solid #f1f5f9';
+  }
+};
+
+// Helper function to apply export styles to element and all its children
+const applyExportStyles = (element: Element): Map<Element, any> => {
+  const originalStyles = new Map();
+  
+  // Apply styles to the element and all its children
+  applyExportStylesWithStorage(element, originalStyles);
+  element.querySelectorAll('*').forEach(child => 
+    applyExportStylesWithStorage(child, originalStyles)
+  );
+  
+  return originalStyles;
+};
+
+// Helper function to restore original styles
+const restoreOriginalStyles = (element: Element, originalStyles: Map<Element, any>) => {
+  // Restore original styles
+  originalStyles.forEach((styles, el) => {
+    const htmlEl = el as HTMLElement;
+    htmlEl.style.color = styles.color;
+    htmlEl.style.backgroundColor = styles.backgroundColor;
+    htmlEl.style.borderColor = styles.borderColor;
+  });
+  
+  // Remove any explicitly set styles we added
+  element.querySelectorAll('*').forEach(el => {
+    const htmlEl = el as HTMLElement;
+    if (htmlEl.style.border === '1px solid #e2e8f0') htmlEl.style.border = '';
+    if (htmlEl.style.borderBottom === '1px solid #e2e8f0' || htmlEl.style.borderBottom === '1px solid #f1f5f9') {
+      htmlEl.style.borderBottom = '';
+    }
+  });
+};
+
 export const exportToCSV = (data: RankingData[], filename: string = 'ranking') => {
   const csvContent = [
     ['Rank', 'Item', 'Score'],
@@ -27,6 +89,7 @@ export const exportToCSV = (data: RankingData[], filename: string = 'ranking') =
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
+  URL.revokeObjectURL(url);
 };
 
 export const exportToExcel = (data: RankingData[], filename: string = 'ranking') => {
@@ -51,41 +114,8 @@ export const exportToImage = async (elementId: string, filename: string = 'ranki
     return;
   }
   
-  // Store original styles to restore later
-  const originalStyles = new Map();
-  
-  // Apply explicit styles for export to ensure visibility
-  const applyExportStyles = (el: Element) => {
-    const htmlEl = el as HTMLElement;
-    originalStyles.set(el, {
-      color: htmlEl.style.color,
-      backgroundColor: htmlEl.style.backgroundColor,
-      borderColor: htmlEl.style.borderColor
-    });
-    
-    // Apply black text and proper borders for visibility
-    htmlEl.style.color = '#000000';
-    if (el.tagName === 'TABLE') {
-      htmlEl.style.backgroundColor = '#ffffff';
-      htmlEl.style.border = '1px solid #e2e8f0';
-    }
-    if (el.tagName === 'TH') {
-      htmlEl.style.backgroundColor = '#f8fafc';
-      htmlEl.style.color = '#000000';
-      htmlEl.style.borderBottom = '1px solid #e2e8f0';
-    }
-    if (el.tagName === 'TD') {
-      htmlEl.style.backgroundColor = '#ffffff';
-      htmlEl.style.borderBottom = '1px solid #f1f5f9';
-    }
-    if (el.tagName === 'TR') {
-      htmlEl.style.borderBottom = '1px solid #f1f5f9';
-    }
-  };
-  
-  // Apply styles to the element and all its children
-  applyExportStyles(element);
-  element.querySelectorAll('*').forEach(applyExportStyles);
+  // Apply export styles and store original styles
+  const originalStyles = applyExportStyles(element);
   
   try {
     const canvas = await html2canvas(element, {
@@ -102,21 +132,7 @@ export const exportToImage = async (elementId: string, filename: string = 'ranki
     console.error('Error generating image:', error);
   } finally {
     // Restore original styles
-    originalStyles.forEach((styles, el) => {
-      const htmlEl = el as HTMLElement;
-      htmlEl.style.color = styles.color;
-      htmlEl.style.backgroundColor = styles.backgroundColor;
-      htmlEl.style.borderColor = styles.borderColor;
-    });
-    
-    // Remove any explicitly set styles we added
-    element.querySelectorAll('*').forEach(el => {
-      const htmlEl = el as HTMLElement;
-      if (htmlEl.style.border === '1px solid #e2e8f0') htmlEl.style.border = '';
-      if (htmlEl.style.borderBottom === '1px solid #e2e8f0' || htmlEl.style.borderBottom === '1px solid #f1f5f9') {
-        htmlEl.style.borderBottom = '';
-      }
-    });
+    restoreOriginalStyles(element, originalStyles);
   }
 };
 
@@ -127,41 +143,8 @@ export const exportToPDF = async (elementId: string, filename: string = 'ranking
     return;
   }
   
-  // Store original styles to restore later
-  const originalStyles = new Map();
-  
-  // Apply explicit styles for export to ensure visibility
-  const applyExportStyles = (el: Element) => {
-    const htmlEl = el as HTMLElement;
-    originalStyles.set(el, {
-      color: htmlEl.style.color,
-      backgroundColor: htmlEl.style.backgroundColor,
-      borderColor: htmlEl.style.borderColor
-    });
-    
-    // Apply black text and proper borders for visibility
-    htmlEl.style.color = '#000000';
-    if (el.tagName === 'TABLE') {
-      htmlEl.style.backgroundColor = '#ffffff';
-      htmlEl.style.border = '1px solid #e2e8f0';
-    }
-    if (el.tagName === 'TH') {
-      htmlEl.style.backgroundColor = '#f8fafc';
-      htmlEl.style.color = '#000000';
-      htmlEl.style.borderBottom = '1px solid #e2e8f0';
-    }
-    if (el.tagName === 'TD') {
-      htmlEl.style.backgroundColor = '#ffffff';
-      htmlEl.style.borderBottom = '1px solid #f1f5f9';
-    }
-    if (el.tagName === 'TR') {
-      htmlEl.style.borderBottom = '1px solid #f1f5f9';
-    }
-  };
-  
-  // Apply styles to the element and all its children
-  applyExportStyles(element);
-  element.querySelectorAll('*').forEach(applyExportStyles);
+  // Apply export styles and store original styles
+  const originalStyles = applyExportStyles(element);
   
   try {
     const canvas = await html2canvas(element, {
@@ -194,20 +177,6 @@ export const exportToPDF = async (elementId: string, filename: string = 'ranking
     console.error('Error generating PDF:', error);
   } finally {
     // Restore original styles
-    originalStyles.forEach((styles, el) => {
-      const htmlEl = el as HTMLElement;
-      htmlEl.style.color = styles.color;
-      htmlEl.style.backgroundColor = styles.backgroundColor;
-      htmlEl.style.borderColor = styles.borderColor;
-    });
-    
-    // Remove any explicitly set styles we added
-    element.querySelectorAll('*').forEach(el => {
-      const htmlEl = el as HTMLElement;
-      if (htmlEl.style.border === '1px solid #e2e8f0') htmlEl.style.border = '';
-      if (htmlEl.style.borderBottom === '1px solid #e2e8f0' || htmlEl.style.borderBottom === '1px solid #f1f5f9') {
-        htmlEl.style.borderBottom = '';
-      }
-    });
+    restoreOriginalStyles(element, originalStyles);
   }
 };
