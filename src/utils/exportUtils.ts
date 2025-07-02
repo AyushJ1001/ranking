@@ -8,8 +8,14 @@ export interface RankingData {
   score: number;
 }
 
+export interface StyleStorage {
+  color: string;
+  backgroundColor: string;
+  borderColor: string;
+}
+
 // Helper function to apply export styles to an element and store original styles
-const applyExportStylesWithStorage = (element: Element, originalStyles: Map<Element, any>) => {
+const applyExportStylesWithStorage = (element: Element, originalStyles: Map<Element, StyleStorage>) => {
   const htmlEl = element as HTMLElement;
   originalStyles.set(element, {
     color: htmlEl.style.color,
@@ -38,8 +44,8 @@ const applyExportStylesWithStorage = (element: Element, originalStyles: Map<Elem
 };
 
 // Helper function to apply export styles to element and all its children
-const applyExportStyles = (element: Element): Map<Element, any> => {
-  const originalStyles = new Map();
+const applyExportStyles = (element: Element): Map<Element, StyleStorage> => {
+  const originalStyles = new Map<Element, StyleStorage>();
   
   // Apply styles to the element and all its children
   applyExportStylesWithStorage(element, originalStyles);
@@ -51,7 +57,7 @@ const applyExportStyles = (element: Element): Map<Element, any> => {
 };
 
 // Helper function to restore original styles
-const restoreOriginalStyles = (element: Element, originalStyles: Map<Element, any>) => {
+const restoreOriginalStyles = (element: Element, originalStyles: Map<Element, StyleStorage>) => {
   // Restore original styles
   originalStyles.forEach((styles, el) => {
     const htmlEl = el as HTMLElement;

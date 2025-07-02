@@ -55,7 +55,7 @@ export default function Matchup({
   if (idx >= pairs.length) {
     const sortedScores = Object.entries(scores)
       .sort(([, a], [, b]) => b - a);
-    const maxScore = sortedScores[0][1];
+    const maxScore = sortedScores.length > 0 ? sortedScores[0][1] : 1;
     
     const rankingData: RankingData[] = sortedScores.map(([item, score], i) => ({
       rank: i + 1,
