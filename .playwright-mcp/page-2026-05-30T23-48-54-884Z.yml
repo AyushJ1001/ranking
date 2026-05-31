@@ -1,0 +1,23 @@
+- generic [active] [ref=e1]:
+  - generic "Design style" [ref=e2]:
+    - button "Use Ledger design" [ref=e3] [cursor=pointer]
+    - button "Use Duel design" [ref=e5] [cursor=pointer]
+    - button "Use Bracket design" [ref=e7] [cursor=pointer]
+    - button "Use Console design" [ref=e9] [cursor=pointer]
+    - button "Use Zine design" [ref=e11] [cursor=pointer]
+  - main "What are we comparing?" [ref=e14]:
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - paragraph [ref=e17]: Ranking list
+        - heading "What are we comparing?" [level=1] [ref=e18]
+      - generic [ref=e19]:
+        - region "Add items" [ref=e20]:
+          - generic [ref=e21]:
+            - textbox "Add items, one per line" [ref=e22]
+            - button "Add items" [ref=e23] [cursor=pointer]
+        - region "Current items" [ref=e24]:
+          - heading "No items yet" [level=2] [ref=e26]
+          - paragraph [ref=e28]: Add at least two items to start voting.
+          - link "Start voting" [disabled] [ref=e29]:
+            - /url: /match
+  - alert [ref=e30]

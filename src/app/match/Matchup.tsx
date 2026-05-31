@@ -1,17 +1,31 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { useEffect, useState } from "react";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+import { type CSSProperties, useEffect, useState } from "react";
+import Link from "next/link";
 import { exportToCSV, exportToExcel, exportToImage, exportToPDF, RankingData } from "@/utils/exportUtils";
-import { Download, FileSpreadsheet, Image, FileText } from "lucide-react";
+import { Download, FileSpreadsheet, ImageIcon, FileText } from "lucide-react";
+
+type RankChoiceStyle = CSSProperties & {
+  "--rank-choice-size": string;
+};
+
+function getChoiceStyle(label: string): RankChoiceStyle {
+  const words = label.trim().split(/\s+/).filter(Boolean);
+  const longestWordLength = Math.max(1, ...words.map((word) => word.length));
+  const totalLength = label.length;
+  const size = Math.max(
+    1.45,
+    Math.min(5.8, 6.4 - longestWordLength * 0.26 - Math.max(0, totalLength - 18) * 0.055)
+  );
+
+  return {
+    "--rank-choice-size": `${size.toFixed(2)}rem`,
+  };
+}
+
+function formatChoiceLabel(label: string) {
+  return label.replaceAll("-", "\u2011");
+}
 
 export default function Matchup({
   pairs,
@@ -21,7 +35,6 @@ export default function Matchup({
   items: string[];
 }) {
   const [startTime, setStartTime] = useState(Date.now());
-  const [choice, setChoice] = useState("");
   const [scores, setScores] = useState<Record<string, number>>(
     Object.fromEntries(items.map((item) => [item, 0]))
   );
@@ -30,27 +43,40 @@ export default function Matchup({
     null
   );
 
-  function handleClick(button: "left" | "right") {
+  function handleChoice(button: "left" | "right") {
+    if (selectedButton || idx >= pairs.length) {
+      return;
+    }
+
+    const selectedItem = pairs[idx][button === "left" ? 0 : 1];
+    const elapsed = Math.max(Date.now() - startTime, 1);
+
     setSelectedButton(button);
-    setChoice(pairs[idx][button === "left" ? 0 : 1]);
+    setScores((prev) => ({
+      ...prev,
+      [selectedItem]: (prev[selectedItem] || 0) + 1 / elapsed,
+    }));
 
     setTimeout(() => {
       setSelectedButton(null);
-    }, 200);
+      setIdx((prev) => prev + 1);
+      setStartTime(Date.now());
+    }, 240);
   }
 
   useEffect(() => {
-    const elapsed = Date.now() - startTime;
-    if (choice) {
-      setIdx((prev) => prev + 1);
-      setScores((prev) => ({
-        ...prev,
-        [choice]: (prev[choice] || 0) + 1 / elapsed,
-      }));
-      setStartTime(Date.now());
-      setChoice("");
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "ArrowLeft") {
+        handleChoice("left");
+      }
+      if (event.key === "ArrowRight") {
+        handleChoice("right");
+      }
     }
-  }, [choice, startTime, idx, pairs]);
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  });
 
   if (idx >= pairs.length) {
     const sortedScores = Object.entries(scores)
@@ -84,112 +110,96 @@ export default function Matchup({
     };
 
     return (
-      <div className="p-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex justify-between items-center mb-6">
-            <h1 className="text-3xl font-bold">Final Rankings</h1>
-            <div className="flex gap-2">
-              <Button
-                onClick={() => handleExport('csv')}
-                variant="outline"
-                size="sm"
-                className="flex items-center gap-2"
-              >
+      <main className="rank-shell rank-shell--standing" aria-labelledby="standing-title">
+        <section className="rank-standing">
+          <header className="rank-page-header rank-page-header--compact">
+            <p className="rank-kicker">Complete</p>
+            <h1 id="standing-title">Final standing</h1>
+          </header>
+
+          <div className="rank-export-bar" aria-label="Export standing">
+            <button className="rank-export-button" onClick={() => handleExport('csv')}>
                 <Download className="w-4 h-4" />
                 CSV
-              </Button>
-              <Button
-                onClick={() => handleExport('excel')}
-                variant="outline"
-                size="sm"
-                className="flex items-center gap-2"
-              >
+            </button>
+            <button className="rank-export-button" onClick={() => handleExport('excel')}>
                 <FileSpreadsheet className="w-4 h-4" />
                 Excel
-              </Button>
-              <Button
-                onClick={() => handleExport('image')}
-                variant="outline"
-                size="sm"
-                className="flex items-center gap-2"
-              >
-                <Image className="w-4 h-4" />
+            </button>
+            <button className="rank-export-button" onClick={() => handleExport('image')}>
+                <ImageIcon className="w-4 h-4" />
                 PNG
-              </Button>
-              <Button
-                onClick={() => handleExport('pdf')}
-                variant="outline"
-                size="sm"
-                className="flex items-center gap-2"
-              >
+            </button>
+            <button className="rank-export-button" onClick={() => handleExport('pdf')}>
                 <FileText className="w-4 h-4" />
                 PDF
-              </Button>
-            </div>
+            </button>
           </div>
-          
-          <Table id="ranking-table" className="border rounded-lg text-center">
-            <TableHeader>
-              <TableRow className="bg-muted/50">
-                <TableHead className="w-[120px] text-center font-bold text-lg py-4">
-                  Rank
-                </TableHead>
-                <TableHead className="text-center font-bold text-lg py-4 px-6">
-                  Item
-                </TableHead>
-                <TableHead className="font-bold text-lg text-right py-4 pr-8">
-                  Score
-                </TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {rankingData.map((data, i) => (
-                <TableRow
-                  key={i}
-                  className="hover:bg-muted/50 transition-colors"
-                >
-                  <TableCell className="text-center font-medium text-lg py-4">
-                    {i === 0 ? "🥇" : i === 1 ? "🥈" : i === 2 ? "🥉" : data.rank}
-                  </TableCell>
-                  <TableCell className="font-medium text-lg py-4 px-6">
-                    {data.item}
-                  </TableCell>
-                  <TableCell className="text-right font-medium text-lg py-4 pr-8">
-                    {data.score}%
-                  </TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </div>
-      </div>
+
+          <div className="rank-standing-table" id="ranking-table">
+            <div className="rank-standing-table__head" aria-hidden="true">
+              <span>Rank</span>
+              <span>Item</span>
+              <span>Score</span>
+            </div>
+            {rankingData.map((data) => (
+              <div key={data.item} className="rank-standing-row">
+                <span>{data.rank}</span>
+                <strong>{data.item}</strong>
+                <span>{data.score}%</span>
+              </div>
+            ))}
+          </div>
+
+          <Link className="rank-button rank-button--quiet rank-standing__back" href="/">
+            Back to list
+          </Link>
+        </section>
+      </main>
     );
   }
 
+  const progressStyle = {
+    "--rank-progress": `${Math.round((idx / pairs.length) * 100)}%`,
+  } as CSSProperties;
+
   return (
-    <>
-      <h1 className="text-center text-2xl font-bold">
-        Completed: {idx}/{pairs.length}
-      </h1>
-      <div className="flex items-center justify-between w-full h-screen gap-4 p-4">
-        <Button
-          className={`flex-1 h-full text-3xl transition-colors duration-200 ${
-            selectedButton === "left" ? "bg-green-500" : ""
-          }`}
-          onClick={() => handleClick("left")}
-        >
-          {pairs[idx][0]}
-        </Button>
-        <span className="text-4xl font-bold">VS</span>
-        <Button
-          className={`flex-1 h-full text-3xl transition-colors duration-200 ${
-            selectedButton === "right" ? "bg-green-500" : ""
-          }`}
-          onClick={() => handleClick("right")}
-        >
-          {pairs[idx][1]}
-        </Button>
+    <main className="rank-vote" aria-label="Voting" data-decision={selectedButton ?? "idle"}>
+      <div
+        className="rank-vote__progress"
+        style={progressStyle}
+        aria-label={`Completed ${idx} of ${pairs.length}`}
+      >
+        <span>{idx}/{pairs.length}</span>
+        <span />
       </div>
-    </>
+
+      <section
+        key={idx}
+        className="rank-pair"
+        data-decision={selectedButton ?? "idle"}
+        aria-label="Choose one item"
+      >
+        <button
+          className="rank-choice rank-choice--left"
+          data-selected={selectedButton === "left"}
+          disabled={selectedButton !== null}
+          style={getChoiceStyle(pairs[idx][0])}
+          onClick={() => handleChoice("left")}
+        >
+          <span className="rank-choice__label">{formatChoiceLabel(pairs[idx][0])}</span>
+        </button>
+        <div className="rank-versus" aria-hidden="true">VS</div>
+        <button
+          className="rank-choice rank-choice--right"
+          data-selected={selectedButton === "right"}
+          disabled={selectedButton !== null}
+          style={getChoiceStyle(pairs[idx][1])}
+          onClick={() => handleChoice("right")}
+        >
+          <span className="rank-choice__label">{formatChoiceLabel(pairs[idx][1])}</span>
+        </button>
+      </section>
+    </main>
   );
 }

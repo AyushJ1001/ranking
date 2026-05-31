@@ -11,10 +11,11 @@ export default function ThemeSwitcher() {
     <Button
       variant="ghost"
       size="icon"
+      className="fixed right-4 top-4 z-50 bg-background/80 shadow-sm"
       onClick={() => {
-        console.log(theme);
         setTheme(theme === "dark" ? "light" : "dark");
       }}
+      aria-label="Toggle color theme"
     >
       {theme === "dark" ? (
         <Moon className="h-4 w-4" />

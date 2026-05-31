@@ -1,0 +1,22 @@
+- generic [active] [ref=e1]:
+  - generic "Design style" [ref=e2]:
+    - button "Use Ledger design" [ref=e3] [cursor=pointer]
+    - button "Use Duel design" [ref=e5] [cursor=pointer]
+    - button "Use Bracket design" [ref=e7] [cursor=pointer]
+    - button "Use Console design" [ref=e9] [cursor=pointer]
+    - button "Use Zine design" [ref=e11] [cursor=pointer]
+  - main "Voting" [ref=e14]:
+    - generic "Completed 0 of 6" [ref=e15]:
+      - generic [ref=e16]: 0/6
+    - region "Choose one item" [ref=e18]:
+      - button "Philosopher Stone A" [ref=e19] [cursor=pointer]
+      - generic [ref=e20]: VS
+      - button "Prisoner of Azkaban B" [ref=e21] [cursor=pointer]
+  - status [ref=e22]:
+    - generic [ref=e23]:
+      - img [ref=e25]
+      - generic [ref=e27]:
+        - text: Static route
+        - button "Hide static indicator" [ref=e28] [cursor=pointer]:
+          - img [ref=e29]
+  - alert [ref=e32]

@@ -1,0 +1,46 @@
+- generic [active] [ref=e1]:
+  - generic "Design style" [ref=e2]:
+    - button "Use Ledger design" [ref=e3] [cursor=pointer]
+    - button "Use Duel design" [ref=e5] [cursor=pointer]
+    - button "Use Bracket design" [ref=e7] [cursor=pointer]
+    - button "Use Console design" [ref=e9] [cursor=pointer]
+    - button "Use Zine design" [ref=e11] [cursor=pointer]
+  - main "What are we comparing?" [ref=e14]:
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - paragraph [ref=e17]: Ranking list
+        - heading "What are we comparing?" [level=1] [ref=e18]
+      - generic [ref=e19]:
+        - region "Add items" [ref=e20]:
+          - generic [ref=e21]:
+            - textbox "Add items, one per line" [ref=e22]
+            - button "Add items" [ref=e23] [cursor=pointer]
+        - region "Current items" [ref=e24]:
+          - generic [ref=e25]:
+            - heading "7 items" [level=2] [ref=e26]
+            - button "Clear" [ref=e27] [cursor=pointer]
+          - generic [ref=e28]:
+            - generic [ref=e29]:
+              - generic [ref=e30]: "01"
+              - strong [ref=e31]: Philosopher's Stone
+            - generic [ref=e32]:
+              - generic [ref=e33]: "02"
+              - strong [ref=e34]: Deathly Hallows
+            - generic [ref=e35]:
+              - generic [ref=e36]: "03"
+              - strong [ref=e37]: Prisoner of Azkaban
+            - generic [ref=e38]:
+              - generic [ref=e39]: "04"
+              - strong [ref=e40]: Goblet of Fire
+            - generic [ref=e41]:
+              - generic [ref=e42]: "05"
+              - strong [ref=e43]: Order of the Phoenix
+            - generic [ref=e44]:
+              - generic [ref=e45]: "06"
+              - strong [ref=e46]: Half-Blood Prince
+            - generic [ref=e47]:
+              - generic [ref=e48]: "07"
+              - strong [ref=e49]: Chamber of Secrets
+          - link "Start voting" [ref=e50] [cursor=pointer]:
+            - /url: /match
+  - alert [ref=e51]

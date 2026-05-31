@@ -1,16 +1,41 @@
-export const dynamic = "force-dynamic";
+"use client";
 
 import { getItems } from "../items";
 import Matchup from "./Matchup";
+import { useEffect, useState } from "react";
 
-export default async function Match() {
-  const items = await getItems();
+export default function Match() {
+  const [items, setItems] = useState<string[]>([]);
+  const [pairs, setPairs] = useState<string[][]>([]);
+  const [isLoaded, setIsLoaded] = useState(false);
 
-  console.log(items);
-  const pairs = createPairs(items);
-  if (items.length < 2) {
-    return <div>Not enough items to match</div>;
+  useEffect(() => {
+    const storedItems = getItems();
+    setItems(storedItems);
+    setPairs(createPairs(storedItems));
+    setIsLoaded(true);
+  }, []);
+
+  if (!isLoaded) {
+    return null;
   }
+
+  if (items.length < 2) {
+    return (
+      <main className="rank-shell rank-shell--list" aria-labelledby="not-enough-title">
+        <section className="rank-list-page rank-list-page--empty">
+          <header className="rank-page-header">
+            <p className="rank-kicker">Voting</p>
+            <h1 id="not-enough-title">Add two items first</h1>
+          </header>
+          <a className="rank-button rank-button--primary" href="/">
+            Back to list
+          </a>
+        </section>
+      </main>
+    );
+  }
+
   return (
     <>
       <Matchup pairs={pairs} items={items} />

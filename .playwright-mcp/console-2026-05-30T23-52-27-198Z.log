@@ -1,0 +1,16 @@
+[    2981ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/b2633_next_dist_compiled_react-dom_d10fbd._.js:13925
+[    3116ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   13862ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   19825ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   34545ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   34790ms] [LOG] [Fast Refresh] done in 246ms @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12266
+[   34803ms] [LOG] [Fast Refresh] done in 258ms @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12266
+[   53707ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   65824ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   67192ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   91303ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[  101982ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[ 1348043ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[ 1348318ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[ 1349941ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[ 1385796ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439

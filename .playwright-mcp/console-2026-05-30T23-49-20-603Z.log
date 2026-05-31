@@ -1,0 +1,771 @@
+[      71ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[     166ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/b2633_next_dist_compiled_react-dom_d10fbd._.js:13925
+[     244ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   22718ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   22892ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   40601ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   40660ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   40660ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   41265ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   41265ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   41323ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   41325ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   41630ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   41968ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   42019ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   42033ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   42267ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   42276ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   42313ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   43605ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   43668ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   43741ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   43797ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   43886ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   43921ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   43961ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   44009ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   45531ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   45591ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   48541ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   48592ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   48673ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   48745ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   48772ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   48805ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   50258ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   50304ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   50416ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   50473ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   50538ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   50586ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   50611ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   50655ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   52177ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   52236ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   58186ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   58232ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   58271ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   58310ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   58312ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   58351ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   59662ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   59713ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   59748ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   59783ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   59785ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   59823ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   59881ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   59919ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   61365ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   61407ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   66464ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   66516ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   66567ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   66607ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   66613ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   66655ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   67420ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   67460ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   67496ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   67535ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   67537ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   67605ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   67631ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   67667ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   67668ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   67714ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   67742ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   67786ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   67787ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   67823ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   68189ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   68229ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   68444ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   68488ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   68526ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   68602ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   69923ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   69968ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   70000ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   70037ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   70039ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   70077ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   70152ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   70195ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   70892ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   70932ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   70959ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   70999ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   71001ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   71038ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   71802ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   71853ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   71890ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   71967ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   73490ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   73530ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   80289ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   80335ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   80366ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   80405ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   80407ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   80450ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   81056ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   81108ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   81133ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   81173ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   81174ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   81212ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   82212ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   82266ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   82295ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   82370ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   82720ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   82764ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   83033ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   83078ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   83107ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   83181ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
+[   84680ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:12439
+[   84719ms] [ERROR] ./src/app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import localFont from "next/font/local";
+> 3 | import "./globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import ThemeProvider from "@/components/ThemeProvider";
+  5 | import DesignSwitcher from "@/components/DesignSwitcher";
+  6 | const geistSans = localFont({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/b2633_next_dist_client_6f3397._.js:1038
